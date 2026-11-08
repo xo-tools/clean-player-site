@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean Player for Streaming</title>
+<meta name="description" content="Mutes profanity and hides scenes you mark while you watch Netflix, HBO Max or Prime Video. Filters stay on your device.">
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<link rel="icon" type="image/png" href="images/icon128.png">
+<style>
+  :root { --bg: #ffffff; --text: #1b1d22; --muted: #5d636e; --line: #e2e5ea; --card: #f6f7f9; --accent: #4f46e5; --accent-text: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121317; --text: #e8eaef; --muted: #9aa0ab; --line: #2c2f37; --card: #1a1c21; --accent: #8b85ff; --accent-text: #121317; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+  header img { width: 88px; height: 88px; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0; }
+  .lead { color: var(--muted); font-size: 18px; margin: 6px 0 0; max-width: 620px; }
+  .cta { display: flex; gap: 12px; flex-wrap: wrap; margin: 28px 0 8px; }
+  .btn { display: inline-block; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 1px solid var(--line); color: var(--text); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+  .note { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 { font-size: 22px; margin: 48px 0 12px; }
+  .shot { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; display: block; }
+  figure { margin: 0 0 24px; }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0; }
+  kbd { font: 13px ui-monospace, monospace; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; background: var(--bg); }
+  ul { padding-left: 20px; }
+  footer { border-top: 1px solid var(--line); margin-top: 56px; padding-top: 20px; color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); }
+  @media (max-width: 520px) { h1 { font-size: 28px; } header img { width: 64px; height: 64px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="images/logo.svg" alt="Clean Player logo">
+    <div>
+      <h1>Clean Player for Streaming</h1>
+      <p class="lead">Mutes swear words and hides scenes you choose, right inside the Netflix, HBO Max and Prime Video players you already use.</p>
+    </div>
+  </header>
+
+  <div class="cta">
+    <a class="btn primary" href="#install">Get the Chrome extension</a>
+    <a class="btn" href="privacy.html">Privacy policy</a>
+  </div>
+  <p class="note">Free. No account. Your filters never leave your browser.</p>
+
+  <h2>See it in action</h2>
+  <figure>
+    <img class="shot" src="images/1-muting.png" alt="A video playing with a notice that profanity will be muted and starred-out subtitles" width="1280" height="800">
+    <figcaption>Profanity found in the subtitles is muted for just that moment, and the on-screen subtitles show it starred out.</figcaption>
+  </figure>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><h3>Automatic muting</h3><p>Reads the title's subtitles, finds words from your list and mutes the audio only while they are spoken.</p></div>
+    <div class="card"><h3>Mark your own scenes</h3><p><kbd>Alt</kbd>+<kbd>I</kbd> marks the start, <kbd>Alt</kbd>+<kbd>O</kbd> the end, then skip, mute or black out. Remembered per title.</p></div>
+    <div class="card"><h3>Categories</h3><p>Turn language, violence, sex/nudity, drugs and other filters on or off at any time.</p></div>
+    <div class="card"><h3>Private by design</h3><p>No account, no servers, no tracking. Word list and filters live only in your browser.</p></div>
+  </div>
+
+  <div class="grid" style="margin-top:24px">
+    <figure><img class="shot" src="images/2-popup.png" alt="The extension popup with filter categories" width="1280" height="800"><figcaption>Choose what to filter from the toolbar popup.</figcaption></figure>
+    <figure><img class="shot" src="images/3-mark-scene.png" alt="Marking a scene during playback" width="1280" height="800"><figcaption>Mark scenes while you watch.</figcaption></figure>
+  </div>
+
+  <h2 id="install">Install</h2>
+  <p>Clean Player for Streaming is on its way to the Chrome Web Store. This page will link to it as soon as it is published.</p>
+  <ul>
+    <li>Works in Chrome and other Chromium browsers (version 111 or later).</li>
+    <li>You need your own Netflix, HBO Max or Prime Video subscription.</li>
+    <li>For automatic muting, turn English subtitles on once (Netflix), keep them on the first time you watch (HBO Max), or do nothing (Prime Video).</li>
+  </ul>
+
+  <h2>Good to know</h2>
+  <ul>
+    <li>Picture filtering covers the video with a black screen, because protected video can't be blurred or analysed.</li>
+    <li>Automatic detection covers language only. Nudity and violence filters come from scenes you mark or filter files you import.</li>
+    <li>Press <kbd>Alt</kbd>+<kbd>G</kbd> while watching to show a debug overlay with the active filter and timing.</li>
+  </ul>
+
+  <h2>Support</h2>
+  <p>Questions, bugs or a service that stopped working: <a href="mailto:info@xo.tools">info@xo.tools</a></p>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a> · <a href="mailto:info@xo.tools">info@xo.tools</a></p>
+    <p>Clean Player is an independent project and is not affiliated with, endorsed by or sponsored by Netflix, Warner Bros. Discovery (HBO Max) or Amazon (Prime Video). All trademarks belong to their owners.</p>
+  </footer>
+</main>
+</body>
+</html>
